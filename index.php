@@ -15,8 +15,8 @@
                 <input type="text" class="form-control" id="lastname">
             </div>
             <div class="mb-3">
-                <label for="lastname" class="form-label">Date of Birth</label>
-                <input type="date" class="form-control" id="dob">
+                <label for="dob" class="form-label">Date of Birth</label>
+                <input type="text" class="form-control" id="dob">
             </div>
             <div class="mb-3">
                 <label for="specialty" class="form-label">Select Specialty</label>
@@ -38,7 +38,7 @@
                 <input type="text" class="form-control" id="phone" aria-describedby="phoneHelp">
                 <div id="phoneHelp" class="form-text">We'll never share your number with anyone else.</div>
             </div>
-            
+
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
 <?php
