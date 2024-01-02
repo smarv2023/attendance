@@ -19,7 +19,7 @@
                 <input type="text" class="form-control" id="dob" name="dob">
             </div>
             <div class="mb-3">
-                <label for="specialty" class="form-label">Select Specialty</label>
+                <label for="specialty" class="form-label">Area of Specialty</label>
                 <select class="form-select" aria-label="Default select example" id = "specialty" name="specialty">
                     <option selected>Open this select menu</option>
                     <option value="Database Admin">Database Admin</option>
