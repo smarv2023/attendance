@@ -23,10 +23,10 @@
                 <label for="specialty" class="form-label">Area of Specialty</label>
                 <select class="form-select" aria-label="Default select example" id = "specialty" name="specialty">
                     <option selected>Open this select menu</option>
-                    <option value="Database Admin">Database Admin</option>
-                    <option value="Web Administrator">Web Administrator</option>
-                    <option value="Software Developer">Software Developer</option>
-                    <option value="Other">Other</option>
+                    <option value="1">Database Admin</option>
+                    <option>Web Administrator</option>
+                    <option>Software Developer</option>
+                    <option>Other</option>
                 </select>
             </div>
             <div class="mb-3">                   
