@@ -11,7 +11,7 @@
         $phone = $_POST['phone'];
         $specialty = $_POST['specialty'];
 
-        $isSuccess = $crud->insert($firstname, $lastname, $dob, $email, $phone, $specialty);
+        $isSuccess = $crud->insertAttendees($firstname, $lastname, $dob, $email, $phone, $specialty);
 
         if($isSuccess){
             echo '<h1 class ="text-center text-success">You Have Been Registered!</h1>';
