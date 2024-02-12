@@ -3,7 +3,7 @@
     require_once 'includes/header.php';
     require_once 'db/conn.php';
 
-    $results = $crud->getAttendees();
+    $results1 = $crud->getAttendees();
 ?>
 
     <table class="table">
@@ -14,13 +14,16 @@
             <th>Specialty</th>
             <th>Actions</th>
         </tr>
-            <?php while($r = $results->fetch(PDO::FETCH_ASSOC)) { ?>
+            <?php while($r = $results1->fetch(PDO::FETCH_ASSOC)) { ?>
                 <tr>
                     <td><?php echo $r['attendee_id']?></td>
                     <td><?php echo $r['firstname']?></td>
                     <td><?php echo $r['lastname']?></td>
                     <td><?php echo $r['name']?></td>
-                    <td><a href="view.php?id=<?php echo $r['attendee_id']?>" class="btn btn-primary">View</a></td>
+                    <td>
+                        <a href="view.php?id=<?php echo $r['attendee_id']?>" class="btn btn-primary">View</a>
+                        <a href="edit.php?id=<?php echo $r['attendee_id']?>" class="btn btn-warning">Edit</a>
+                    </td>
                 </tr>
             <?php  }?>
         </tr>

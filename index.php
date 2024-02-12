@@ -2,7 +2,7 @@
     $title = "Index";
     require_once 'includes/header.php';
     require_once 'db/conn.php';
-    $results1 = $crud->getSpecialties();
+    $results = $crud->getSpecialties();
 ?>
 
         <h1 class ="text-center">Registration for Conference</h1>
@@ -23,7 +23,7 @@
             <div class="mb-3">
                 <label for="specialty" class="form-label">Area of Specialty</label>
                 <select class="form-select" aria-label="Default select example" id = "specialty" name="specialty">
-                    <?php while($r = $results1->fetch(PDO::FETCH_ASSOC)) {?>
+                    <?php while($r = $results->fetch(PDO::FETCH_ASSOC)) {?>
                         <option value="<?php echo $r['specialty_id']?>"><?php echo $r['name']?></option>
                     <?php } ?>
                 </select>
