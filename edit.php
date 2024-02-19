@@ -5,7 +5,9 @@
     $results = $crud->getSpecialties();
 
     if(!isset($_GET['id'])) {
-        echo "error";
+        //errror
+        include 'includes/errormessage.php';
+        header("Location: vierecords.php");
     } else {
         $id = $_GET['id'];
         $attendee = $crud->getAttendeeDetails($id);
@@ -56,6 +58,7 @@
             </div>
 
             <button type="submit" class="btn btn-success" name="submit">Save Changes</button>
+            <a href="viewrecords.php?" class="btn btn-info">Back to List</a>
         </form>
     <?php } ?>
         
